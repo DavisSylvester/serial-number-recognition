@@ -1,0 +1,25 @@
+header {
+  height: 60px;
+  background: #005EB8;
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+
+
+}
+
+header > img {
+  height: 75%;
+}
+
+header > h3 {
+  
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 29px;
+  margin-top: 15px;
+  font-family: 'Roboto Slab' !important;
+  font-weight: 700;
+}
