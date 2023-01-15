@@ -1,3 +1,5 @@
+@import "../../global-styles/global.scss";
+
 #content-container {
   display: flex;
   flex-direction: column;
@@ -66,7 +68,7 @@
 .status-container {
   display: flex;
   height: 10vh;
-  background: #005eb8;
+  background: $primaryColor;
   align-items: center;
   justify-content: center;
   font-family: "Raleway";
@@ -77,7 +79,7 @@
   font-size: 3rem;
   font-weight: 900;
   line-height: 5rem;
-  color: #fff;
+  color: $primaryHeaderColor;
   text-transform: uppercase;
 
 }
