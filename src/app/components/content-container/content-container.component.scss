@@ -1,18 +1,94 @@
 #content-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: calc(100vh - 60px);
   padding: 5px 10px;
+}
 
+.video-selector-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .video-container {
-  flex-basis: 70%;
-
+  flex-basis: 60%;
+  max-width: 60%;
+  padding: 0.6% 2%;
+  height: 55vh;
 }
-
 
 .selector-container {
   flex-grow: 1;
+  height: 55vh;
+  padding-top: 6px;
+}
 
+.score {
+  font-family: "Roboto Slab";
+  font-size: 8rem;
+  line-height: 8rem;
+  font-weight: 700;
+}
+
+.data-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.score-image {
+  width: 50%;
+  max-width: 50%;
+}
+
+.score-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  display: block;
+}
+
+.selector-container > mat-card > div {
+  display: flex;
+  align-items: center;
+}
+
+.data {
+  background-size: cover;
+  // background-image: url("/assets/images/dog.jpg");
+  height: 300px;
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.status-container {
+  display: flex;
+  height: 10vh;
+  background: #005eb8;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway";
+}
+
+.status-container > span {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.command-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+mat-card-content {
+  overflow: hidden;
+}
+
+video {
+  padding-bottom: 36px;
 }

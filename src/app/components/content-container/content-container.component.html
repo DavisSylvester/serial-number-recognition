@@ -1,10 +1,41 @@
 <div id="content-container">
-  <div class="video-container">
-    <video width="640" height="480" autoplay loop>
+  <div class="video-selector-container">
+    <div class="video-container">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Live Feed</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <video height="300px" autoplay loop>
+            <source src="../../../assets/videos/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </mat-card-content>
+      </mat-card>
+    </div>
 
-      <source src="../../../assets/videos/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
+    <div class="selector-container">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>&nbsp;</mat-card-title>
+        </mat-card-header>
+
+        <div>
+          <img src="../../../assets/images/dog.jpg" class="data" />
+          <div class="data-score">
+            <span class="score-title">Score</span>
+            <span class="score">{{matchingScore}}%</span>
+          </div>
+
+        </div>
+        <div class="command-container">
+          <button mat-button color="primary">ACCEPT</button>
+          <button mat-button color="primary">EDIT</button>
+        </div>
+      </mat-card>
+    </div>
   </div>
-  <div class="selector-container"></div>
+  <div class="status-container">
+    <span>{{statusText}}</span>
+  </div>
 </div>
