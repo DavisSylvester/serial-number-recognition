@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { StatusText } from './StatusText';
 
 @Component({
@@ -10,6 +11,7 @@ export class ContentContainerComponent {
 
   statusText: StatusText= "Waiting for Part";
   _mactchingScore: number = 78;
+  videoFeed: string = environment.videoFeed;
 
   get matchingScore() {
     return this._mactchingScore;
